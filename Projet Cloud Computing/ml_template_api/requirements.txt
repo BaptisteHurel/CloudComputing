@@ -1,0 +1,10 @@
+pandas
+scikit-learn
+numpy
+streamlit
+gunicorn
+joblib
+fastapi
+pylint
+flask
+redis
