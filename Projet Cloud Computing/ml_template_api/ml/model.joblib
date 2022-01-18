@@ -1,0 +1,18 @@
+from sklearn import svm
+from sklearn import datasets
+clf = svm.SVC()
+X, y= datasets.load_iris(return_X_y=True)
+clf.fit(X, y)
+SVC()
+
+import pickle
+s = pickle.dumps(clf)
+clf2 = pickle.loads(s)
+clf2.predict(X[0:1])
+array([0])
+y[0]
+
+from joblib import dump, load
+dump(clf, 'filename.joblib') 
+
+clf = load('filename.joblib')
